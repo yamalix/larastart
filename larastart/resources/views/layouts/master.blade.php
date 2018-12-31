@@ -11,13 +11,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>AdminLTE 3 | Starter</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="/css/app.css">
 
     <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/C46D5370-6EFF-534C-AACD-3013D84778BD/main.js" charset="UTF-8"></script></head>
-<body class="hold-transition sidebar-mini">
-<div class="wrapper">
+<body class="hold-transition sidebar-mini" >
+<div class="wrapper" id="app">
 
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
@@ -66,12 +67,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <router-link to="/dashboard" class="nav-link">
                             <i class="nav-icon fa fa-tachometer-alt"></i>
                             <p>
                                         Dashboard
                             </p>
-                        </a>
+                        </router-link>
                     </li>
 
 
@@ -80,16 +81,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                     </li>
                     <li class="nav-item has-treeview ">
-                        <a href="#" class="nav-link ">
+                        <router-link to="/settings" class="nav-link ">
                             <i class="nav-icon fa fa-cog"></i>
                             <p>
                                 Settings
                                 <i class="right fa fa-angle-left"></i>
                             </p>
-                        </a>
+                        </router-link>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="#" class="nav-link ">
                                     <i class="fa fa-circle-o nav-icon"></i>
                                     <p>Active Page</p>
                                 </a>
@@ -102,12 +103,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </li>
                         </ul>
                     </li>
-                    <a href="#" class="nav-link">
+                    <router-link to="profile" class="nav-link">
                         <i class="nav-icon fa fa-user"></i>
                         <p>
                             Profile
                         </p>
-                    </a>
+                    </router-link>
                     <a href="#" class="nav-link">
                         <i class="nav-icon fa fa-power-off"></i>
                         <p>
@@ -128,6 +129,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- /.content-header -->
 
         <!-- Main content -->
+        <div class="content">
+            <div class="container-fluid">
+                <router-view></router-view>
+
+            </div>
+        </div>
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
