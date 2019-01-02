@@ -90,17 +90,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link ">
-                                    <i class="fa fa-circle-o nav-icon"></i>
-                                    <p>Active Page</p>
-                                </a>
+                                <router-link to="/users" class="nav-link ">
+                                    <i class="fa fa-users nav-icon"></i>
+                                    <p>Users</p>
+                                </router-link>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="fa fa-circle-o nav-icon"></i>
-                                    <p>Inactive Page</p>
-                                </a>
-                            </li>
+
                         </ul>
                     </li>
                     <router-link to="profile" class="nav-link">
@@ -109,12 +104,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             Profile
                         </p>
                     </router-link>
-                    <a href="#" class="nav-link">
+                    <a class="nav-link" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+
                         <i class="nav-icon fa fa-power-off"></i>
                         <p>
                             Log Out
                         </p>
                     </a>
+
                     </li>
                 </ul>
             </nav>
@@ -122,7 +121,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <!-- /.sidebar -->
     </aside>
-
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        @csrf
+    </form>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
