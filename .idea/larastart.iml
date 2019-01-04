@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/larastart/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/larastart/app" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/defuse/php-encryption" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/doctrine/instantiator" />
@@ -14,13 +15,21 @@
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/erusev/parsedown" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/firebase/php-jwt" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/jakub-onderka/php-console-color" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/jakub-onderka/php-console-highlighter" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/laravel/passport" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/league/event" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/league/oauth2-server" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/myclabs/deep-copy" />
@@ -33,6 +42,7 @@
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpseclib/phpseclib" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpspec/prophecy" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpunit/php-file-iterator" />
@@ -41,9 +51,11 @@
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpunit/php-token-stream" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/psr/simple-cache" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/ramsey/uuid" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/sebastian/code-unit-reverse-lookup" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/sebastian/comparator" />
@@ -69,6 +81,7 @@
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/symfony/polyfill-php72" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/symfony/psr-http-message-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/symfony/routing" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/symfony/var-dumper" />
@@ -76,6 +89,7 @@
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/larastart/vendor/zendframework/zend-diactoros" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

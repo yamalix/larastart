@@ -74,6 +74,20 @@
       <path value="$PROJECT_DIR$/larastart/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/larastart/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/larastart/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/larastart/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/larastart/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/larastart/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/larastart/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/larastart/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/larastart/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/larastart/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/larastart/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/larastart/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/larastart/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/larastart/vendor/league/event" />
+      <path value="$PROJECT_DIR$/larastart/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/larastart/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/larastart/vendor/laravel/passport" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
