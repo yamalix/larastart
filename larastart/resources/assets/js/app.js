@@ -14,12 +14,19 @@ import moment from 'moment';
 import { Form, HasError, AlertError } from 'vform';
 import VueProgressBar from 'vue-progressbar';
 import swal from 'sweetalert2';
+import Gate from './Gate';
+
+Vue.prototype.$gate=new Gate(window.user);
+
+
 window.swal=swal;
 window.Form=Form;
 
 Vue.component(HasError.name, HasError)
 Vue.component(AlertError.name, AlertError)
 Vue.use(VueRouter)
+Vue.component('pagination', require('laravel-vue-pagination'));
+
 
 let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue') },
@@ -62,17 +69,17 @@ window.toast=toast;
 
 Vue.component(
     'passport-clients',
-    require('./components/passport/Clients.vue').default
+    require('./components/passport/Clients.vue')
 );
 
 Vue.component(
     'passport-authorized-clients',
-    require('./components/passport/AuthorizedClients.vue').default
+    require('./components/passport/AuthorizedClients.vue')
 );
 
 Vue.component(
     'passport-personal-access-tokens',
-    require('./components/passport/PersonalAccessTokens.vue').default
+    require('./components/passport/PersonalAccessTokens.vue')
 );
 /**
  * Next, we will create a fresh Vue application instance and attach it to

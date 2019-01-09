@@ -104,12 +104,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             Profile
                         </p>
                     </router-link>
+                    @can('isAdmin')
                     <router-link to="developer" class="nav-link">
                         <i class="nav-icon fa fa-cogs"></i>
                         <p>
                             Developer
                         </p>
                     </router-link>
+                    @endcan
                     <a class="nav-link" href="{{ route('logout') }}"
                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -170,9 +172,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
+    @auth
+        <script>
+
+            window.user= @json(auth()->user());
+        </script>
+
+    @endauth
 
 <!-- jQuery -->
 <script src="/js/app.js"></script>
-<
 </body>
 </html>

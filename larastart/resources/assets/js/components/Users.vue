@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="row mt-5">
+        <div class="row mt-5" v-if="$gate.isAdmin()">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -23,7 +23,7 @@
                                 <th>Modify</th>
                             </tr>
 
-                            <tr v-for="user in users" :key="user.id">
+                            <tr v-for="user in users.data" :key="user.id">
                                 <td>{{user.id }}</td>
                                 <td>{{user.name | upText}}</td>
                                 <td>{{user.email}}</td>
@@ -46,6 +46,10 @@
                             </tbody></table>
                     </div>
                     <!-- /.card-body -->
+                    <div class="card-footer">
+                        <pagination :data="users" @pagination-change-page="getResults"></pagination>
+
+                    </div>
                 </div>
                 <!-- /.card -->
             </div>
@@ -64,7 +68,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form @submit.prevent="editMode ? updateUser(form.id) : createUser">
+                    <form @submit.prevent="editMode ? updateUser(form.id) : createUser()">
                     <div class="modal-body">
                         <div class="form-group">
                             <input placeholder="name" v-model="form.name" type="text" id="name" name="name"
@@ -118,6 +122,11 @@
     export default {
 
         methods:{
+            getResults(page = 1) {
+                axios.get('api/user?page=' + page)
+                    .then(response => {
+                        this.users = response.data;
+                    });},
             updateUser(){
                 this.$Progress.start();
 
@@ -151,6 +160,7 @@
 
             },
             createUser(){
+                console.log("creating");
                 this.editMode=false;
                 this.$Progress.start();
                 this.form.post('api/user')
@@ -195,7 +205,7 @@
                 })
             },
             loadUsers(){
-                axios.get("api/user").then(({data})=>(this.users=data.data));
+                axios.get("api/user").then(({data})=>(this.users=data));
             }
         },
         data(){

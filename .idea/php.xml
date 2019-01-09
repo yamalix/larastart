@@ -88,6 +88,7 @@
       <path value="$PROJECT_DIR$/larastart/vendor/league/oauth2-server" />
       <path value="$PROJECT_DIR$/larastart/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/larastart/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/larastart/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
